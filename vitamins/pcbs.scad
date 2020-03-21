@@ -351,7 +351,43 @@ RAMPSEndstop = ["RAMPSEndstop", "RAMPS Endstop Switch",
     ],
     []];
 
+L298N_makerfactory = ["L298N", "MakerFactory L298N",
+    55, 60, 1.6, 5, 3.2, 6, "red", false,
+    [
+        [5, 5], [50, 5], [50, 55], [5, 55]
+    ],
+    [
+        [27.5, 5, 0, "2p54header", 8, 1],
+        [16.5, -7, 90, "gterm35", 2, [], "lightblue"],
+        [27.5, -7, 90, "gterm35", 3, 0, "lightblue"],
+        [38.5, -7, 90, "gterm35", 2, 0, "lightblue"],
+        [-5, 20, 0, "2p54header", 2, 6],
+        [27.5, -24, 90, "chip", 17, 24, 25]
+    ],
+    [],
+    [],
+    [],
+    M2p5_pan_screw
+    ];
 
-pcbs = [RAMPSEndstop, ExtruderPCB, PI_IO, RPI0, EnviroPlus, RPI3, ArduinoUno3, ArduinoLeonardo, Keyes5p1, PERF80x20, PERF70x50, PERF70x30, PERF60x40, PERF74x51, PSU12V1A, DuetE, Duex2, Duex5, Melzi, ZC_A0591];
+L298N_china = ["L298N_china", "Chinese L298N",
+    43.5, 43.5, 1.6, 0, 2.9, 3, "red", false,
+    [
+        [3.25, 3.25], [40.25, 3.25], [40.25, 40.25], [3.25, 40.25]
+    ],
+    [
+        [28.5, 5, 0, "2p54header", 6, 1],
+        [5, 14, 180, "gterm35", 2, [], "lightblue"],
+        [13.5, 5, -90, "gterm35", 3, 0, "lightblue"],
+        [38.5, 14, 0, "gterm35", 2, 0, "lightblue"],
+        [21.75, -8, 90, "chip", 17, 24, 25]
+    ],
+    [],
+    [],
+    [],
+    M2p5_pan_screw
+    ];
+
+pcbs = [RAMPSEndstop, ExtruderPCB, PI_IO, RPI0, EnviroPlus, RPI3, ArduinoUno3, ArduinoLeonardo, Keyes5p1, PERF80x20, PERF70x50, PERF70x30, PERF60x40, PERF74x51, PSU12V1A, DuetE, Duex2, Duex5, Melzi, ZC_A0591, L298N_makerfactory, L298N_china];
 
 use <pcb.scad>
